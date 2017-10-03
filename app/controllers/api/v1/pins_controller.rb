@@ -1,4 +1,4 @@
-class Api::V1::PinsController < ApplicationController
+class Api::V1::PinsController < ApiController
   def index
     render json: Pin.all.order('created_at DESC')
   end

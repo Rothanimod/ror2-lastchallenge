@@ -293,3 +293,10 @@ DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is depreca
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "pins" ("title", "created_at", "updated_at", "image_url") VALUES (?, ?, ?, ?)[0m  [["title", "Luxury Car"], ["created_at", 2017-10-03 13:58:46 UTC], ["updated_at", 2017-10-03 13:58:46 UTC], ["image_url", "https://s3.amazonaws.com/makeitreal/pins/luxury-car.jpg"]]
   [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mPin Load (0.5ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (name like '%steve%' or email like '%gmail%')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
